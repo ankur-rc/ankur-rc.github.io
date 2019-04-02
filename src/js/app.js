@@ -1,6 +1,6 @@
 /* sweetScroll load */
 document.addEventListener("DOMContentLoaded", function () {
-  new SweetScroll({/* some options */});
+  new SweetScroll({/* some options */ });
 
   /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
   particlesJS('particles-js', {
@@ -13,16 +13,16 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#b3b2b2"
       },
       "shape": {
-        "type": "polygon",
+        "type": "star",
         "stroke": {
           "width": 0,
           "color": "#000000"
         },
         "polygon": {
-          "nb_sides": 5
+          "nb_sides": 8
         },
         "image": {
           "src": "img/github.svg",
@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       },
       "opacity": {
-        "value": 0.5,
-        "random": false,
+        "value": 0.24463576890600452,
+        "random": true,
         "anim": {
           "enable": false,
           "speed": 1,
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 19.18081918081918,
+          "speed": 40,
           "size_min": 0.1,
           "sync": false
         }
@@ -59,9 +59,9 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       "move": {
         "enable": true,
-        "speed": 4,
+        "speed": 6,
         "direction": "none",
-        "random": true,
+        "random": false,
         "straight": false,
         "out_mode": "out",
         "bounce": false,
@@ -70,19 +70,18 @@ document.addEventListener("DOMContentLoaded", function () {
           "rotateX": 600,
           "rotateY": 1200
         }
-      },
-      nb: 80
+      }
     },
     "interactivity": {
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": false,
-          "mode": "grab"
+          "enable": true,
+          "mode": "repulse"
         },
         "onclick": {
-          "enable": true,
-          "mode": "push"
+          "enable": false,
+          "mode": "repulse"
         },
         "resize": true
       },
@@ -114,5 +113,4 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     "retina_detect": true
   });
-
 }, false);
