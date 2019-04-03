@@ -1,8 +1,13 @@
+/*
+ * Created Date: Tuesday April 2nd 2019
+ * Last Modified: Tuesday April 2nd 2019 11:00:02 pm
+ * Author: ankurrc
+ */
 # Site settings
 title: Main
 description: Ankur's Personal Website
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
-url: "https://ankurrc.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Ankur Roy Chowdhury
