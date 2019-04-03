@@ -1,5 +1,84 @@
 <div class="user-details">
   <h1> Featured Projects </h1>
+  <!-- <nav>
+    <span><a href="#">Home</a></span>
+    <span><a href="#">About</a></span>
+    <span><a href="#">Contact</a></span>
+  </nav> -->
+</div>
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="autodrive" src="{{ "/assets/img/autodrive.jpeg" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents">
+    <h3> Autonommous driving using Deep Reinforcement Learning</h3>
+    <!-- <ul>
+      <li> Featured Skills</li>
+    </ul> -->
+    <p>Used a canonical actor-critic method - <a target="blank_" href="https://arxiv.org/abs/1509.02971">Deep
+        Deterministic Policy
+        Gradients</a> to train an agent to follow lanes. The training was done in a simulation environment using the <a
+        href="http://carla.org/" target="blank_">Carla Simulator</a>. The work was primarily motivated by <a
+        href="https://arxiv.org/pdf/1807.00412.pdf" target="blank_">Kendall et. al</a>. Major changes were done to shape
+      the reward
+      signal.
+      Also, an attempt was made to incorporate the partial observability of the environment by using recurrent neural
+      networks.</p>
+    <a class="project-link" target="blank_" href="https://github.com/ankur-rc/autodrive_ddpg">code</a><a
+      class="project-link" target="blank_"
+      href="https://docs.google.com/viewer?url=https://github.com/ankur-rc/autodrive_ddpg/raw/master/rl_project_report.pdf">report</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="dronet_am" src="{{ "/assets/img/dronet_activation_maps.png" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents-right">
+    <h3> Dronet Activation Maps </h3>
+    <!-- <ul>
+      <li> Featured Skills</li>
+    </ul> -->
+    <p>Added support for visualizing the decisions made by the <a target="blank_"
+        href="https://github.com/uzh-rpg/rpg_public_dronet">Dronet</a> neural network by publishing activation maps. The
+      activation maps signify the regions of an image which contribute most to the decision made the neural network.
+      It was based on <a target="blank_" href="https://arxiv.org/abs/1610.02391">Grad-CAM: Visual Explanations from Deep
+        Networks via
+        Gradient-based Localization</a>. The project was to determine how well Dronet generalises for a ground
+      vehicle. The experiments were performed on a Polaris GEM e6.</p>
+    <a class="project-link" href="https://github.com/ankur-rc/dronet_activation_maps" target="blank_">code</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="drivable" src="{{ "/assets/img/drivable_area.png" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents">
+    <h3> Drivable Area <h4>(Ongoing)</h4>
+    </h3>
+    <p>The aim of this project is to derive a driving policy directly from visual space. Currently, a segmentation
+      network has been trained on a subset of the <a href="http://bair.berkeley.edu/blog/2018/05/30/bdd/"
+        target="blank_">BDD100K</a> dataset.
+      The segmentation network uses a <a href="https://arxiv.org/abs/1602.07360" target="blank_">SqueezeNet</a>
+      backbone.
+    </p>
+    <a class="project-link" href="https://github.com/ankur-rc/drivable_area" target="blank_">code</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="mountains" src="{{ "/assets/img/career%20closet.png" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents-right">
+    <h3> Project Title </h3>
+    <ul>
+      <li> Featured Skills</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.</p>
+    <a class="project-link" href="#">Check it out</a>
+  </div>
 </div>
 <div class="user-projects">
   <div class="images-right">
@@ -10,8 +89,11 @@
     <ul>
       <li> Featured Skills</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.</p>
+    <a class="pill project-link" href="#">Check it out</a>
   </div>
 </div>
 <div class="user-projects">
@@ -23,7 +105,11 @@
     <ul>
       <li> Featured Skills</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo
+      consequat.</p>
     <a class="project-link" href="#">Check it out</a>
   </div>
 </div>
