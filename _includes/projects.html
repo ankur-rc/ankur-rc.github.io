@@ -66,50 +66,49 @@
 </div>
 <div class="user-projects">
   <div class="images-left">
-    <img alt="mountains" src="{{ "/assets/img/career%20closet.png" | prepend: site.baseurl }}" />
+    <img alt="face_rec" src="{{ "/assets/img/dml.png" | prepend: site.baseurl }}" />
   </div>
   <div class="contents-right">
-    <h3> Project Title </h3>
-    <ul>
-      <li> Featured Skills</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <h3> Face-Recognition Module </h3>
+    <p> "Face Trigger” (FT) is a framework for building applications that rely on face-recognition. It enables the
+      development of an end-to-end pipeline for training a machine learning classifier for the purposes of identifying
+      people’s faces. The model was based on a deep neural network inspired from <a
+        href="https://arxiv.org/abs/1503.03832" target="blank_">FaceNet</a>.
+      The project was implemented as a python package, to be used to develop other applications. As a POC, a real-time
+      face recognition application was developed on AWS DeepLens.</p>
+    <a class="project-link" href="https://github.com/ankur-rc/facerec_dml" target="blank_">code</a><a
+      class="project-link" href="https://ankur-rc.github.io/facerec_dml/site/html/index.html"
+      target="blank_">documentation</a><a class="project-link" href="https://github.com/ankur-rc/deeplens_facerec"
+      target="blank_">app</a>
   </div>
 </div>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
+    <img alt="yaw" src="{{ "/assets/img/yaw.png" | prepend: site.baseurl }}" />
   </div>
   <div class="contents">
-    <h3> Project Title </h3>
-    <ul>
-      <li> Featured Skills</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
-    <a class="pill project-link" href="#">Check it out</a>
+    <h3> Yaw prediction from sensors </h3>
+    <p>The project was to predict the yaw angles from raw sensor readings from an IMU. The aim of the project was to
+      reverse engineer the Kalman filters used in expensive IMUs, so that a function could be learnt from sensor
+      readings to orientation.
+      The data was collected on a VectorNav IMU (VN-200) and a cheaper PixHawk IMU. The function approximator used was a
+      recurrent neural network.
+    </p>
+    <a class="pill project-link" href="https://github.com/ankur-rc/raw_2_yaw" target="blank_">code</a>
   </div>
 </div>
 <div class="user-projects">
   <div class="images-left">
-    <img alt="mountains" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
+    <img alt="dronet_carla" src="{{ "/assets/img/dronet_carla.png" | prepend: site.baseurl }}" />
   </div>
   <div class="contents-right">
-    <h3> Project Title </h3>
-    <ul>
-      <li> Featured Skills</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo
-      consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <h3> Carla benchmark on Dronet </h3>
+    <p>The project aimed to benchmark <a href="https://github.com/uzh-rpg/rpg_public_dronet"
+        target="blank_">Dronet's</a> performance on <a href="http://carla.org/" target="blank_">Carla's</a> CoRL 2017
+      benchmark suite. Dronet is a neural network that takes as input monocular images and provides 2 outputs:
+      probability of collision aand steering angle.
+      Unfortunately, the pre-trained network did not perform well as it was trained on real-life images. The network
+      needs to be trained on synthetic images or some form of domain adaptation needs to be applied.</p>
+    <a class="project-link" href="https://github.com/ankur-rc/dronet_carla" target="blank_">code</a>
   </div>
 </div>
