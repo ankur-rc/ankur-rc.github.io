@@ -135,6 +135,43 @@
 </div>
 <div class="user-projects">
   <div class="images-left">
+    <img alt="csp" src="{{ "/assets/img/csp.png" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents-right">
+    <h3>UAV Mission Planning</h3>
+    <p>The aim of the project was to assign missions to pilots, respecting certain eligibility criteria.
+      As input, 3 lists were provided. The first list included the pilots and the corresponding Aerial vehicles they can
+      fly.
+      The second list contained UAVs and the mission types they could support along with a quantity of each UAV type.
+      The third and final list had bunch of missions along with their types. The mission planner had to assign each
+      pilot to a UAV and a corresponding mission.
+      All constraints had to be respected. </p>
+    <a class="project-link" href="https://github.com/ankur-rc/csp_mission_plan" target="blank_">code</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="vpc" src="{{ "/assets/img/bp.png" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents">
+    <h3> VPC Indirect Branch Predictor</h3>
+    <p> Reproduced the <a href="https://dl.acm.org/citation.cfm?id=1250715" target="blank_"> Virtual Program Counter
+      </a> indirect
+      branch predictor. VPC treats each indirect branch as multiple virtual conditional branches. As a result of which,
+      the existing conditional branch prediction hardware can be used.
+      A conditional branch prediction algorithm was also reproduced based on <a
+        href="http://www.cs.virginia.edu/~skadron/Papers/taco_bpred_sep05.pdf" targte="blank_">Merging Path and GShare
+        Indexing
+        Perceptron</a> branch prediction.</a>
+    </p>
+    <a class="project-link" href="https://github.com/ankur-rc/VPC-Indirect-Branch-Predictor" target="blank_">code</a>
+    <a class="project-link"
+      href="https://docs.google.com/viewer?url=https://github.com/ankur-rc/VPC-Indirect-Branch-Predictor/raw/master/report/Project%20Report.pdf"
+      target="blank_">report</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-left">
     <img alt="dronet_carla" src="{{ "/assets/img/dronet_carla.png" | prepend: site.baseurl }}" />
   </div>
   <div class="contents-right">
