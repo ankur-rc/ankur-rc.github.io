@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       },
       "opacity": {
-        "value": 0.24463576890600452,
+        "value": 0.25,
         "random": true,
         "anim": {
           "enable": false,

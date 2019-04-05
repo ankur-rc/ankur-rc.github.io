@@ -84,17 +84,53 @@
 </div>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="yaw" src="{{ "/assets/img/yaw.png" | prepend: site.baseurl }}" />
+    <img alt="lstm" src="{{ "/assets/img/lstm.png" | prepend: site.baseurl }}" />
   </div>
   <div class="contents">
-    <h3> Yaw prediction from sensors </h3>
-    <p>The project was to predict the yaw angles from raw sensor readings from an IMU. The aim of the project was to
-      reverse engineer the Kalman filters used in expensive IMUs, so that a function could be learnt from sensor
-      readings to orientation.
-      The data was collected on a VectorNav IMU (VN-200) and a cheaper PixHawk IMU. The function approximator used was a
-      recurrent neural network.
+    <h3> Human Activity Recognition </h3>
+    <p>The aim of the project was to develop a machine learning model to recognise human activities: stand, walk, walk
+      upstairs, walk downstairs, sit and run.
+      Many models were developed including classical methods like SVM and various neural network architectures like CNN,
+      LSTM, CNN-LSTM, ConvLSTM. The dataset used was the <a
+        href="https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones" target="blank_">UCI
+        HAR dataset</a>.
+      The trained model was deployed in an Android application.
     </p>
-    <a class="pill project-link" href="https://github.com/ankur-rc/raw_2_yaw" target="blank_">code</a>
+    <a class="project-link" href="https://github.com/ankur-rc/human_activity_recognition" target="blank_">code</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="fragonfly" src="{{ "/assets/img/dragonfly.webp" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents-right">
+    <h3> Dragonfly ROS node </h3>
+    <p>Created a ROS node for straeming sensor data from <a href="https://www.perceptin.io/products" target="blank_">
+        Perceptin's
+        Dragonfly computer vision module</a>. Dragonfly vision module has 2 stereo pairs (front + back) and an IMU unit,
+      all
+      of which are hardware synchronized.
+    </p>
+    <a class="pill project-link" href="https://github.com/ankur-rc/usl_dragonfly" target="blank_">code</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="path plan" src="{{ "/assets/img/path.jpeg" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents-left">
+    <h3>UAV Path Planning</h3>
+    <p>The aim of the project was to generate a path for a UAV to traverse in order to find a missing person. As input,
+      a probability density map was given which indicated the probability of finding the missing person in one of the
+      grid locations.
+      The path was generated such that the UAV prioritises locations that have a high probability density. A
+      meta-heuristic algorithm was applied to generate the path, called Local Hill Climbing.
+    </p>
+    <a class="project-link" href="https://github.com/ankur-rc/hill-climb_path_gen" target="blank_">code</a>
+    <a class="project-link" href="https://www.youtube.com/watch?v=LskhySoaqz4" target="blank_">video</a>
+    <a class="project-link"
+      href="https://docs.google.com/viewer?url=https://github.com/ankur-rc/hill-climb_path_gen/raw/master/code/927001907_project1/report.pdf"
+      target="blank_">report</a>
   </div>
 </div>
 <div class="user-projects">
@@ -102,7 +138,7 @@
     <img alt="dronet_carla" src="{{ "/assets/img/dronet_carla.png" | prepend: site.baseurl }}" />
   </div>
   <div class="contents-right">
-    <h3> Carla benchmark on Dronet </h3>
+    <h3>Dronet on CoRL benchmark</h3>
     <p>The project aimed to benchmark <a href="https://github.com/uzh-rpg/rpg_public_dronet"
         target="blank_">Dronet's</a> performance on <a href="http://carla.org/" target="blank_">Carla's</a> CoRL 2017
       benchmark suite. Dronet is a neural network that takes as input monocular images and provides 2 outputs:
@@ -125,20 +161,5 @@
       recurrent neural network.
     </p>
     <a class="pill project-link" href="https://github.com/ankur-rc/raw_2_yaw" target="blank_">code</a>
-  </div>
-</div>
-<div class="user-projects">
-  <div class="images-left">
-    <img alt="dronet_carla" src="{{ "/assets/img/dronet_carla.png" | prepend: site.baseurl }}" />
-  </div>
-  <div class="contents-right">
-    <h3> Carla benchmark on Dronet </h3>
-    <p>The project aimed to benchmark <a href="https://github.com/uzh-rpg/rpg_public_dronet"
-        target="blank_">Dronet's</a> performance on <a href="http://carla.org/" target="blank_">Carla's</a> CoRL 2017
-      benchmark suite. Dronet is a neural network that takes as input monocular images and provides 2 outputs:
-      probability of collision aand steering angle.
-      Unfortunately, the pre-trained network did not perform well as it was trained on real-life images. The network
-      needs to be trained on synthetic images or some form of domain adaptation needs to be applied.</p>
-    <a class="project-link" href="https://github.com/ankur-rc/dronet_carla" target="blank_">code</a>
   </div>
 </div>
