@@ -6,6 +6,44 @@
     <span><a href="#">Contact</a></span>
   </nav> -->
 </div>
+
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="sfm" src="{{ "/assets/img/sfm.png" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents">
+    <h3> Structure from Motion</h3>
+    <!-- <ul>
+      <li> Featured Skills</li>
+    </ul> -->
+    <p> Developed a basic structure-from-motion framework. For pairwise motion estimation and triangulation, OpenCV was
+      used.
+      To perform global bundle-adjustment, Ceres was used. Generates a sparse point cloud representing scene geometry.
+    </p>
+    <a class="project-link" target="blank_" href="https://github.com/ankur-rc/structure_from_motion">code</a>
+    <!-- <a class="project-link" target="blank_"
+      href="https://docs.google.com/viewer?url=https://github.com/ankur-rc/autodrive_ddpg/raw/master/rl_project_report.pdf">report</a> -->
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="hdr" src="{{ "/assets/img/hdr.png" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents-right">
+    <h3> High Dynamic Range using CRF reconstruction</h3>
+    <!-- <ul>
+      <li> Featured Skills</li>
+    </ul> -->
+    <p>Developed a HDR image generator that uses a set of SDR images captured using different shutter speeds.
+      Essentially, the Camera Response Function is
+      recovered which maps pixel values to exposure values. Using the CRF, a the radiance values are tone-mapped to
+      generate an HDR image.
+      The algorithm was based on Debevec, <i>et. al.</i> 1997.</p>
+    <a class="project-link" href="https://github.com/ankur-rc/hdr_generator" target="blank_">code</a>
+    <a class="project-link" target="blank_"
+      href="https://docs.google.com/viewer?url=https://github.com/ankur-rc/hdr_generator/raw/master/report.pdf">report</a>
+  </div>
+</div>
 <div class="user-projects">
   <div class="images-right">
     <img alt="autodrive" src="{{ "/assets/img/autodrive.jpeg" | prepend: site.baseurl }}" />
